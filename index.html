@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link rel="stylesheet" href="master.css">
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Crowdfunding product page</title>
+</head>
+
+<body>
+  <div class="main">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="logo"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav w-100">
+            <li class="nav-item">
+              <a class="nav-l" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-l" href="#">Discover</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-l" href="#">Get Started</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="content">
+    <img class="logo2" src="./images/logo-mastercraft.svg" alt="">
+    <div class="heading">
+      Mastercraft Bamboo Monitor Riser
+    </div>
+    <div class="para">
+      A beautiful & handcrafted monitor stand to reduce neck and eye strain.
+    </div>
+    <div class="btns">
+      <a class="btn1">Back this project</a>
+      <a class="btn2" onclick="changeImage()"><img id="myImage" class="bookmark" src="./images/icon-bookmark.svg" alt=""><span id="text">Bookmark</span></a>
+    </div>
+  </div>
+  <div class="content2">
+    <div class="inside2">
+      <div class="in">
+        <h1>$89,914</h1>
+        <p>of $100,000 backed</p>
+      </div>
+      <div class="in">
+        <h1>5,007</h1>
+        <p>total backers</p>
+      </div>
+      <div class="in">
+        <h1>56</h1>
+        <p>days left</p>
+      </div>
+    </div>
+    <div id="progressbar">
+      <div></div>
+    </div>
+  </div>
+  <div class="content2">
+    <div class="inside3">
+      <h5>About this project</h5>
+      <p>The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen
+        to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve
+        your posture and make you more comfortable while at work, helping you stay focused on the task at hand.</p>
+      <p> Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer
+        to allow notepads, pens, and USB sticks to be stored under the stand.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="headerC">
+          <h1>Bamboo Stand</h1>
+          <p class="secondh">Pledge $25 or more</p>
+        </div>
+        <p class="paragraph-card">You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+        you’ll be added to a special Backer member list.</p>
+        <div class="headerC" style="align-items:center;">
+          <div class="foot">
+            <span>101</span><p class="span">left</p>
+          </div>
+
+          <a class="btn3" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Select Reward</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+  <div class="card-body">
+    <div class="headerC">
+      <h1>Black Edition Stand</h1>
+      <p class="secondh">Pledge $75 or more</p>
+    </div>
+    <p class="paragraph-card">You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+    member list. Shipping is included.</p>
+    <div class="headerC" style="align-items:center;">
+      <div class="foot">
+        <span>64</span> <p class="span">left</p>
+      </div>
+
+      <a class="btn3" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Select Reward</a>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="headerC">
+      <h1>Mahogany Special Edition</h1>
+      <p class="secondh">Pledge $200 or more</p>
+    </div>
+    <p class="paragraph-card">You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+    to our Backer member list. Shipping is included.</p>
+    <div class="headerC" style="align-items:center;">
+      <div class="foot">
+      <span>0</span><p class="span">left</p>
+      </div>
+      <a class="btn3" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Out of Stock</a>
+    </div>
+  </div>
+</div>
+  </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1>Back this project</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-text">
+            <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+          </div>
+          <div id="card1" class="card card-modal">
+            <div class="modal-check">
+              <label id="label1" class="label">
+              <input id="check1" type="checkbox" name="" value=""></label><h1>Pledge with no reward</h1>
+            </div>
+            <div class="card-content">
+              <p>Choose to support us without a reward if you simply believe in our project. As a backer,
+              you will be signed up to receive product updates via email.</p>
+            </div>
+            <div id="checkbox1" class="modal-footer invisible" style="text-align:right">
+            <a class="btn3" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Continue</a>
+            </div>
+          </div>
+          <div id="card2" class="card card-modal">
+            <div class="modal-check">
+              <label id="label2" class="label">
+              <input id="check2" type="checkbox" name="" value=""></label><h1>Bamboo Stand</h1><span class="span1">Pledge $25 or more</span><p class="left"><span class="span2">101</span><span class="span3">left</span></p>
+            </div>
+            <div class="card-content">
+              <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+              you’ll be added to a special Backer member list.</p>
+            </div>
+            <div id="checkbox2" class="modal-footer invisible">
+              <input type="text" placeholder="Enter your pledge">
+              <span class="dollor">$<input type="number" name="" min="25"></span>
+              <a class="btn3" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Continue</a>
+            </div>
+          </div>
+          <div id="card3" class="card card-modal">
+            <div class="modal-check">
+              <label id="label3" class="label">
+              <input id="check3" type="checkbox" name="" value=""></label><h1>Black Edition Stand</h1><span class="span1">Pledge $75 or more</span><p class="left"><span class="span2">64</span><span class="span3">left</span></p>
+            </div>
+            <div class="card-content">
+              <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+              member list. Shipping is included.</p>
+            </div>
+            <div id="checkbox3" class="modal-footer invisible">
+              <input type="text" placeholder="Enter your pledge">
+              <span class="dollor">$<input type="number" name="" min="75"></span>
+              <a class="btn3" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Continue</a>
+            </div>
+          </div>
+          <div id="card4" class="card card-modal disabled">
+            <div class="modal-check">
+              <label id="label4" class="label">
+              <input id="check4" type="checkbox" name="" value="" disabled></label><h1>Mahogany Special Edition</h1><span class="span1">Pledge $200 or more</span><p class="left"><span class="span2">0</span><span class="span3">left</span></p>
+            </div>
+            <div class="card-content">
+              <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+              to our Backer member list. Shipping is included.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog w-40 modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img class="check" src="./images/icon-check.svg" alt="check">
+          <h5>Thanks for your support!</h5>
+          <p class="modal-para">Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+          an email once our campaign is completed.
+          Got it!</p>
+        </div>
+        <div class="foot2">
+          <a class="btn3" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Got it</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    function changeImage() {
+      var image = document.getElementById('myImage');
+      var text = document.getElementById("text");
+      if (image.src.match("./images/icon-bookmark.svg")) {
+        image.src = "./images/icon-check.svg";
+        text.innerHTML = "Bookmarked";
+        text.style.color = "hsl(176, 72%, 28%)";
+      } else {
+        image.src = "./images/icon-bookmark.svg";
+        text.innerHTML = "Bookmark";
+        text.style.color = "hsl(0, 0%, 48%)";
+      }
+    }
+    $('#check1').change(function(){
+      if($("#check1").is(":checked")) {
+        $('#checkbox1').removeClass('invisible');
+          $('#checkbox1').addClass('visible');
+          $("#card1").removeClass("card-modal");
+          $("#card1").addClass("card-modal-checked");
+          $("#label1").removeClass("label")
+          $("#label1").addClass("label-checked")
+
+      } else {
+        $('#checkbox1').removeClass('visible');
+          $('#checkbox1').addClass('invisible')
+          $("#card1").removeClass("card-modal-checked");
+          $("#card1").addClass("card-modal");
+          $("#label1").removeClass("label-checked")
+          $("#label1").addClass("label")
+      }
+  });
+  $('#check2').change(function(){
+    if($("#check2").is(":checked")) {
+      $('#checkbox2').removeClass('invisible');
+        $('#checkbox2').addClass('visible');
+        $("#card2").removeClass("card-modal");
+        $("#card2").addClass("card-modal-checked");
+        $("#label2").removeClass("label")
+        $("#label2").addClass("label-checked")
+
+
+    } else {
+      $('#checkbox2').removeClass('visible');
+        $('#checkbox2').addClass('invisible')
+        $("#card2").removeClass("card-modal-checked");
+        $("#card2").addClass("card-modal");
+        $("#label2").removeClass("label-checked")
+        $("#label2").addClass("label")
+    }
+  });
+  $('#check3').change(function(){
+    if($("#check3").is(":checked")) {
+      $('#checkbox3').removeClass('invisible');
+        $('#checkbox3').addClass('visible');
+        $("#card3").removeClass("card-modal");
+        $("#card3").addClass("card-modal-checked");
+        $("#label3").removeClass("label")
+        $("#label3").addClass("label-checked")
+
+
+    } else {
+      $('#checkbox3').removeClass('visible');
+        $('#checkbox3').addClass('invisible')
+        $("#card3").removeClass("card-modal-checked");
+        $("#card3").addClass("card-modal");
+        $("#label3").removeClass("label-checked")
+        $("#label3").addClass("label")
+    }
+  });
+
+  </script>
+</body>
+
+</html>
